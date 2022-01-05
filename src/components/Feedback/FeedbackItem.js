@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-
+import s from "./Feedback.module.scss";
 
 const FeedbackItem = ({ option, onLeaveFeedback }) => {
   return (
-    <li>
-      <button onClick={() => onLeaveFeedback(option)}>
+    <li className={s.Item} >
+      <button className={s.Button} onClick={() => onLeaveFeedback(option)}>
         {option}
       </button>
     </li>

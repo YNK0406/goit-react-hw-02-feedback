@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import FeedbackItem from './FeedbackItem';
 import { nanoid } from 'nanoid';
-
+import s from "./Feedback.module.scss";
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <ul >
+    <ul className={s.List}>
       {options.map(option => (
         <FeedbackItem
           key={nanoid()}
